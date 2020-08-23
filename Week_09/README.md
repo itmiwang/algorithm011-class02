@@ -23,7 +23,7 @@ KMP算法（Knuth-Morris-Pratt）的思想就是，当子串与目标字符串�
 不同路径2的状态转移方程
 
 ```java
-if (dp[i][j] == 0) dp[i][j] = 0;
-if (dp[i][j] != 0) dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+if (obstacleGrid[i][j] == 0) dp[i][j] = 0;
+if (obstacleGrid[i][j] != 0) dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
 ```
 
